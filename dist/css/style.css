@@ -484,3 +484,15 @@
     padding-bottom: 50px;
   }
 }
+.service__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: 0 20px;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
