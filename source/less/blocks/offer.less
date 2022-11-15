@@ -1,17 +1,8 @@
 .offer {
-    &__bg-image {
-        display: block;
-        width: 100%;
-        height: auto;
-
-        &--second {
-            display: none;
-        }
-    }
-
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
+        min-height: 100vh;
         padding: 0 20px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -35,7 +26,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: @second-font;
         width: 160px;
         height: 42px;
         color: white;
@@ -51,7 +41,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: @bg-color-fifth;
+            // background-color: @bg-color-fifth;
             color: black;
         }
 

@@ -9,6 +9,13 @@
     color: white;
     z-index: 5;
 
+    &__wrapper-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
@@ -21,11 +28,12 @@
         }
     }
 
-    &__wrapper-logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-transform: uppercase;
+    &__name {
+        margin: 0;
+        color: @color-second;
+        margin-right: 10px;
+        font-size: 36px;
+        line-height: 36px;
     }
 
     &__logo {
@@ -47,47 +55,46 @@
         align-items: center;
     }
 
-    &__button-buy {
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        color: #ffffff;
-        background-color: @bg-color-main;
-        border: none;
-        padding: 10px 60px;
-        font-weight: 700;
-        letter-spacing: 1px;
+    // &__button-buy {
+    //     font-style: normal;
+    //     text-align: center;
+    //     text-transform: uppercase;
+    //     font-weight: 400;
+    //     font-size: 14px;
+    //     line-height: 18px;
+    //     color: #ffffff;
+    //     background-color: @bg-color-main;
+    //     border: none;
+    //     padding: 10px 60px;
+    //     font-weight: 700;
+    //     letter-spacing: 1px;
 
-        &:hover {
-            color: @color-main;
-            background-color: #ffffff;
-        }
+    //     &:hover {
+    //         color: @color-main;
+    //         background-color: #ffffff;
+    //     }
 
-        &:active {
-            outline: 1px solid @color-main;
-        }
-    }
+    //     &:active {
+    //         outline: 1px solid @color-main;
+    //     }
+    // }
 
     &__button-nav {
         position: relative;
         border: none;
         width: 24px;
         height: 20px;
+        padding: 0;
         background-color: transparent;
-        margin-left: 20px;
         cursor: pointer;
-    }
 
-    &__button-nav::before {
-        position: absolute;
-        content: url("../../img/icons/burger.svg");
-        width: 24px;
-        height: 20px;
-        top: 0;
-        left: 0;
+        &-icon {
+            display: block;
+            width: 24px;
+            height: 20px;
+            z-index: 1;
+            color: #ffffff;
+        }
     }
 
     &__button-nav--cross {
@@ -96,7 +103,6 @@
         width: 24px;
         height: 20px;
         background-color: transparent;
-        margin-left: 20px;
         cursor: pointer;
         padding: 0;
     }
@@ -112,24 +118,14 @@
 
     &__button-nav--cross::before {
         rotate: -45deg;
-        top: 8;
+        top: 8px;
         left: 0;
     }
 
     &__button-nav--cross::after {
         rotate: 45deg;
-        top: 8;
+        top: 8px;
         right: 0;
-    }
-
-    &__button-nav-icon {
-        display: block;
-        width: 24px;
-        height: 16px;
-        background-image: url('/source/img/icons/burger.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: 1;
     }
 
     &__nav--close {
