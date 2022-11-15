@@ -1,0 +1,25 @@
+.main-container {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 83px;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        padding-top: 106px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .main-container {
+        padding-top: 126px;
+
+        &__wrapper-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

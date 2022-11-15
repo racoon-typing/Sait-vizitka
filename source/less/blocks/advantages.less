@@ -1,0 +1,138 @@
+.advantages {
+    background-color: @bg-color-second;
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        font-family: @second-font;
+        color: @color-second;
+        margin: 0;
+        text-align: center;
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            width: 90px;
+            height: 80px;
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        &__wrapper {
+            max-width: 1200px;
+            padding: 80px 30px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__text {
+            font-size: 24px;
+            line-height: 28px;   
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 30%;
+
+            &-icon {
+                margin-bottom: 20px;
+            }
+
+            &-text {
+                margin: 0;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .advantages {
+        &__wrapper {
+            max-width: 1440px;
+            padding: 100px 110px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            padding-left: 0;
+            width: 30%;
+            margin-bottom: 0;
+
+            &-icon-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            &-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &-title {
+                text-align: center;
+            }
+
+            &-text {
+                text-align: center;
+            }
+        }
+    }
+}
