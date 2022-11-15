@@ -1,0 +1,35 @@
+.about {
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 500px;
+        min-height: 100vh;
+        padding: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .offer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            padding: 20px 30px;
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .offer {
+        &__wrapper {
+            max-width: 1440px;
+            padding: 40px 110px;
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+    }
+}
