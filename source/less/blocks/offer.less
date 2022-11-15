@@ -9,6 +9,10 @@
         margin: 0 auto;
     }
 
+    &__sub-title {
+        color: @color-second;
+    }
+
     &__title {
         margin: 0;
         font-style: normal;
@@ -19,6 +23,28 @@
 
         &--red {
             color: #A81919;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid @color-main;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 
