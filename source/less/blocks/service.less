@@ -3,6 +3,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         box-sizing: border-box;
         max-width: 500px;
         min-height: 100vh;
@@ -10,5 +11,89 @@
         padding-top: 56px;
         padding-bottom: 40px;
         margin: 0 auto;
+    }
+
+    &__sub-title {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+        line-height: normal;
+        padding: 10px 20px;
+        background-color: @color-fourth;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        line-height: normal; 
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        position: relative;
+        margin: 0;
+        color: @color-third;
+        padding-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: @color-fourth;
+            width: 30%;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);        
+        }
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            width: 140px;
+            height: 140px;
+        }
+
+        &-title {
+            margin: 0;
+            font-size: 24px;
+            line-height: normal;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            margin: 0;
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        &-time {
+            margin: 0;
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        &-link {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            line-height: normal;
+            color: @color-main;
+            background-color: @color-fourth;
+            margin-top: 10px;
+        }
     }
 }
