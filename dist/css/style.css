@@ -516,8 +516,10 @@
 .service__text {
   position: relative;
   margin: 0;
+  font-size: 16px;
   color: #f3f3f3;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 .service__text::before {
   position: absolute;
@@ -529,11 +531,6 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.service__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
 .service__item {
   display: flex;
   flex-direction: column;
@@ -542,13 +539,23 @@
 .service__item-icon {
   width: 140px;
   height: 140px;
+  margin-bottom: 15px;
 }
 .service__item-title {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   line-height: normal;
   font-weight: 400;
   margin-bottom: 10px;
+  text-align: center;
+}
+.service__item-table {
+  width: 90%;
+  font-size: 16px;
+  border-spacing: 5px;
+}
+.service__item-cell--first {
+  font-weight: 700;
 }
 .service__item-text {
   margin: 0;
@@ -568,7 +575,7 @@
   line-height: normal;
   color: #ffffff;
   background-color: #FFB841;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .image-slider {
   box-sizing: border-box;
@@ -579,6 +586,7 @@
 .image-slider__wrapper-item {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .image-slider__wrapper-item--news {
   min-height: 130px;
@@ -609,27 +617,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 30px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   padding-top: 30px;
   box-sizing: border-box;
 }
-.image-slider .image-slider__slide--news {
-  padding: 0 30px;
-  padding-bottom: 30px;
-  background: linear-gradient(85deg, #ffd885, #ffcd61, #ffc547);
-}
 .image-slider .swiper-button-prev,
 .image-slider .swiper-button-next {
-  z-index: 4;
-  --swiper-navigation-size: 30px;
+  display: none;
 }
 .image-slider .swiper-pagination {
   z-index: 4;
 }
 .image-slider .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
 }
 @media (min-width: 768px) {
   .image-slider .image-slider__slide {
