@@ -1,7 +1,7 @@
 .technology {
     &__wrapper {
         display: grid;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 10% 1fr 50%;
         box-sizing: border-box;
         max-width: 500px;
         min-height: 100vh;
@@ -11,16 +11,53 @@
         margin: 0 auto;
     }
 
+    &__title {
+        margin: 0;
+        color: @color-second;
+        font-size: 30px;
+        line-height: normal;
+        text-align: center;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     &__list {
+        display: flex;
         padding: 0;
         margin: 0;
         list-style-type: none;
         width: 100%;
         height: auto;
+        overflow-x: auto;
     }
 
     &__item {
         width: 100%;
+        box-sizing: border-box;
+        flex-shrink: 0;
         height: auto;
+        padding: 0 20px;
+        padding-top: 10px;
+    }
+
+    &__preview {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-figure {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid @color-fourth;
+            transition: 2s;
+        }
     }
 }

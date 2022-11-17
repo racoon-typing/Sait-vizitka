@@ -49,3 +49,19 @@ new Swiper('.image-slider', {
     // Отступ между слайдами
     spaceBetween: 30,
 });
+
+
+let triangleNode = document.querySelector('.technology__preview-figure');
+console.log(triangleNode);
+
+triangleNode.addEventListener('click', () => {
+    let axisX = Math.floor(((Math.random() < 0.5) ? -1 : 1) * Math.random() * 120);
+    let axisY = Math.floor(((Math.random() < 0.5) ? -1 : 1)*Math.random() * 90);
+    let rotateFigure = Math.floor(((Math.random() < 0.5) ? -1 : 1)*Math.random() * 180);
+
+    triangleNode.style.transform = `translate(${axisX}%, ${axisY}%) rotate(${rotateFigure}deg)`;
+
+    console.log(axisX);
+    console.log(axisY);
+    console.log(rotateFigure);
+});
