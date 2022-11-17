@@ -51,8 +51,19 @@ new Swiper('.image-slider', {
 });
 
 
+// Игра
+let triangleWrapperNode = document.querySelector('.technology__preview');
+
+triangleWrapperNode.addEventListener('click', () => {
+    console.log('Клик');
+    triangleWrapperNode.classList.remove('technology__preview--close');
+});
+
+
+
+// Треугольник
 let triangleNode = document.querySelector('.technology__preview-figure');
-console.log(triangleNode);
+// console.log(triangleNode);
 
 triangleNode.addEventListener('click', () => {
     let axisX = Math.floor(((Math.random() < 0.5) ? -1 : 1) * Math.random() * 120);
