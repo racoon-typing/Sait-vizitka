@@ -21,7 +21,8 @@
   "homepage": "https://github.com/racoon-typing/D2_SG_EN#readme",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
